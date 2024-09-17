@@ -1,0 +1,41 @@
+/* Estilos para el modal */
+.modal {
+  /* background-color: #1A234A; */
+  margin-top: 22px;
+  padding: 22px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+}
+
+
+.modal_img{
+  width: 250px;
+  height: 150px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+
+#modal_text{
+  margin-top: 0px;
+  font-size: 20px;
+}
+
+.modal_btn-img.btn-icon-modal {
+  /* Estilos personalizados para el botón con icono */
+  /* Puedes ajustar los estilos según tus necesidades */
+
+  line-height: 100%;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  line-height: 100%;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 100px;
+  background: #f5f5f5;
+  display: inline-block;
+}

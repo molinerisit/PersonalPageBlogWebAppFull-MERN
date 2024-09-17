@@ -1,0 +1,6 @@
+.blog-container {
+    background-color: white;
+    min-height: 100vh; /* Asegúrate de que el fondo blanco cubra toda la altura de la vista */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Asegúrate de que el texto se vea bien */
+  }

@@ -1,0 +1,426 @@
+.Top {
+  text-align: center;
+}
+
+.Top-header {
+  min-height: 100vh;
+  display: flex;
+  position: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.Top-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.Trailer-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: white;
+}
+
+.Arrow-container {
+  position: absolute;
+  bottom: 30px; /* Adjust the position of the arrow on smaller screens */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Arrow {
+  width: 40px;
+  height: 40px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  animation: arrowBlink 1s infinite;
+}
+
+@keyframes arrowBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Media Query for small screens (max-width: 600px) */
+@media (max-width: 600px) {
+  .Top-header {
+    justify-content: center; /* Center vertically on mobile */
+  }
+  .Top-text {
+    font-size: 20px;
+    margin: 0; /* Remove the margin to center horizontally */
+  }
+}
+
+
+/* Section road */
+
+.road_timeline {
+    position: relative;
+    border-radius: 4px;
+    padding: 5rem;
+    margin: 0 auto 1rem auto;
+    overflow: hidden;
+  }
+
+
+  .road_img-fluid-id1{
+    width: 85px;
+  }
+
+  .rounded{
+    border-radius: 15px;
+  }
+
+  .img_modal--notebook{
+    border-radius: 15px;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .road_timeline:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    border-right: 2px dashed #C5D1D9;
+    height: 100%;
+    display: block;
+  }
+  
+  .road_timeline-row {
+    padding-left: 50%;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .road_timeline-row .road_timeline-time {
+    position: absolute;
+    right: 50%;
+    top: 15px;
+    text-align: right;
+    margin-right: 20px;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .road_timeline-row .road_timeline-time small {
+    display: block;
+    font-size: 0.8rem;
+  }
+  
+  .road_timeline-row .road_timeline-content {
+    position: relative;
+    padding: 20px 30px;
+    background: #5a5f65;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .road_timeline-row .road_timeline-content:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    height: 16px;
+    width: 16px;
+    background: #C5D1D9;
+  }
+  
+  .road_timeline-row .road_timeline-content:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -49px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    z-index: 1;
+    background: #00FFD3;
+    /* border: 2px dashed #C5D1D9; */
+  }
+  
+  .road_timeline-row .road_timeline-content h4 {
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    line-height: 150%;
+  }
+  
+  .road_timeline-row .road_timeline-content .road_m-0 .Top-text #modal_text .road_no-margin {
+    margin-bottom: 30px;
+    line-height: 150%;
+  }
+
+  .parrafo {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.link-argentina{
+  color: black
+
+}
+  
+  .road_timeline-row .road_timeline-content .i {
+    font-size: 1.2rem;
+    line-height: 100%;
+    padding: 15px;
+    border-radius: 100px;
+    background: #f5f5f5;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  
+  
+  .road_timeline-row .road_timeline-content .road_thumbs {
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .road_timeline-row .road_timeline-content .road_thumbs .road_img-fluid  {
+    margin: 5px;
+    max-width: 120px;
+  }
+  
+  .road_timeline-row .road_timeline-content .road_badge {
+    background: white;
+    margin: 5px;
+    padding: auto;
+  }
+  
+  
+ .road_timeline-content {
+    margin-left: 40px;
+    text-align: left;
+  }
+  
+  .road_timeline-row:nth-child(even) .road_timeline-content:after {
+    left: -8px;
+    right: initial;
+    border-bottom: 0;
+    border-left: 0;
+    transform: rotate(-135deg);
+  }
+  
+  .road_timeline-row:nth-child(even) .road_timeline-content:before {
+    left: -52px;
+    right: initial;
+  }
+  
+  .road_timeline-row:nth-child(odd) {
+    padding-left: 0;
+    padding-right: 50%;
+  }
+  
+  .road_timeline-row:nth-child(odd) .road_timeline-time {
+    right: auto;
+    left: 50%;
+    text-align: left;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+  
+  .road_timeline-row:nth-child(odd) .road_timeline-content {
+    margin-right: 40px;
+  }
+  
+  .road_timeline-row:nth-child(odd) .road_timeline-content:after {
+    right: -8px;
+    border-left: 0;
+    border-bottom: 0;
+    transform: rotate(45deg);
+  }
+  
+  @media (max-width: 992px) {
+    .road_timeline {
+      padding: 15px;
+    }
+  
+    .road_timeline:after {
+      border: 0;
+    }
+  
+    .road_timeline .road_timeline-row:nth-child(odd) {
+      padding: 0;
+    }
+  
+    .road_timeline .road_timeline-row:nth-child(odd) .road_timeline-time {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 0 0 10px 0;
+    }
+  
+    .road_timeline .road_timeline-row:nth-child(odd) .road_timeline-content {
+      margin: 0;
+    }
+  
+    .road_timeline .timeline-row:nth-child(odd) .road_timeline-content:before {
+      display: none;
+    }
+  
+    .road_timeline .road_timeline-row:nth-child(odd) .road_timeline-content:after {
+      display: none;
+    }
+  
+    .road_timeline .road_timeline-row:nth-child(even) {
+      padding: 0;
+    }
+  
+    .road_timeline .road_timeline-row:nth-child(even) .road_timeline-time {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 0 0 10px 0;
+      text-align: left;
+    }
+  
+    .road_timeline .road_timeline-row:nth-child(even) .road_timeline-content {
+      margin: 0;
+    }
+  
+    .road_timeline .road_timeline-row:nth-child(even) .road_timeline-content:before {
+      display: none;
+    }
+  
+  }  
+
+
+  
+  /* Estilos para los botones */
+  .button {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    
+  }
+  
+  .button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  
+
+/* CSS modal */
+.modal_btn {
+  background-color: #464640;
+  border: 1px solid #f5f5f5;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.i-vermas {
+  font-size: 1.6rem;
+  line-height: 20%;
+  padding: 3%;
+  border-radius: 20%;
+  background: #f5f5f5;
+  margin: 10px 0px 0px 10px;
+}
+
+.btn_icon-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  color: inherit;
+}
+
+
+.modal_btn:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .modal_btn {
+    padding: 10px 30px;
+  }
+}
+
+/* Section Fin */
+
+.Fin {
+  text-align: center;
+}
+
+.Fin-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Fin-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.Fin-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Fin-link {
+  color: #61dafb;
+}
+
+@keyframes Fin-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
